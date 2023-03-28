@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Cell">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@color/grey</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CellInRecycler">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@color/light_grey</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CellsTitle">
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@color/grey</item>
+    </style>
+
+    <style name="CountCells">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@color/grey</item>
+    </style>
+
+    <style name="PlaceCells">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@color/grey</item>
+    </style>
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/cardview_margin">
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="@dimen/cardview_edittext_width"
+        android:layout_height="@dimen/cardview_edittext_height"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:maxLength="1"
+        android:lines="1"
+        android:imeOptions="actionNext|flagNoFullscreen"
+        style="@style/CellInRecycler"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

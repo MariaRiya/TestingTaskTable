@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cardview_edittext_width">34dp</dimen>
+    <dimen name="cardview_edittext_height">34dp</dimen>
+    <dimen name="cardview_margin">2dp</dimen>
+    <dimen name="clear_margin_start">4dp</dimen>
+    <dimen name="clear_margin_top">4dp</dimen>
+    <dimen name="title_height">34dp</dimen>
+    <dimen name="vp_width">34dp</dimen>
+    <dimen name="vp_height">34dp</dimen>
+    <dimen name="lin_hor_margin_top">4dp</dimen>
+    <dimen name="hp_width">34dp</dimen>
+    <dimen name="hp_height">34dp</dimen>
+    <dimen name="lin_total_count_margin_top">4dp</dimen>
+    <dimen name="count_title_height">34dp</dimen>
+    <dimen name="count_height">34dp</dimen>
+    <dimen name="lin_final_place_margin_top">4dp</dimen>
+    <dimen name="place_height">34dp</dimen>
+</resources>

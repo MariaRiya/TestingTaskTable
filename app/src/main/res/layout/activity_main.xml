@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/clear_margin_start"
+        android:layout_marginTop="@dimen/clear_margin_top"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/clear_text"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toStartOf="@+id/lin_hor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/lin_title"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/lin_vert"
+        app:layout_constraintEnd_toStartOf="@id/lin_total_count"
+        app:layout_constraintTop_toBottomOf="@id/lin_hor"/>
+
+    <LinearLayout
+        android:id="@+id/lin_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lin_hor"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_height"
+            android:text="@string/title1_text"
+            style="@style/CellsTitle" />
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_height"
+            android:text="@string/title2_text"
+            style="@style/CellsTitle" />
+
+        <TextView
+            android:id="@+id/title3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_height"
+            android:text="@string/title3_text"
+            style="@style/CellsTitle" />
+
+        <TextView
+            android:id="@+id/title4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_height"
+            android:text="@string/title4_text"
+            style="@style/CellsTitle" />
+
+        <TextView
+            android:id="@+id/title5"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_height"
+            android:text="@string/title5_text"
+            style="@style/CellsTitle" />
+
+        <TextView
+            android:id="@+id/title6"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_height"
+            android:text="@string/title6"
+            style="@style/CellsTitle" />
+
+        <TextView
+            android:id="@+id/title7"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_height"
+            android:text="@string/title7"
+            style="@style/CellsTitle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_vert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/lin_title"
+        app:layout_constraintTop_toBottomOf="@id/lin_hor"
+        android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/vp1"
+                android:layout_width="@dimen/vp_width"
+                android:layout_height="@dimen/vp_height"
+                android:text="@string/vp1_text"
+                style="@style/Cell" />
+
+            <TextView
+                android:id="@+id/vp2"
+                android:layout_width="@dimen/vp_width"
+                android:layout_height="@dimen/vp_height"
+                android:text="@string/vp2_text"
+                style="@style/Cell" />
+
+            <TextView
+                android:id="@+id/vp3"
+                android:layout_width="@dimen/vp_width"
+                android:layout_height="@dimen/vp_height"
+                android:text="@string/vp3_text"
+                style="@style/Cell" />
+
+            <TextView
+                android:id="@+id/vp4"
+                android:layout_width="@dimen/vp_width"
+                android:layout_height="@dimen/vp_height"
+                android:text="@string/vp4_text"
+                style="@style/Cell" />
+
+            <TextView
+                android:id="@+id/vp5"
+                android:layout_width="@dimen/vp_width"
+                android:layout_height="@dimen/vp_height"
+                android:text="@string/vp5_text"
+                style="@style/Cell" />
+
+            <TextView
+                android:id="@+id/vp6"
+                android:layout_width="@dimen/vp_width"
+                android:layout_height="@dimen/vp_height"
+                android:text="@string/vp6_text"
+                style="@style/Cell" />
+
+            <TextView
+                android:id="@+id/vp7"
+                android:layout_width="@dimen/vp_width"
+                android:layout_height="@dimen/vp_height"
+                android:text="@string/vp7_text"
+                style="@style/Cell" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_hor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/lin_hor_margin_top"
+        app:layout_constraintStart_toEndOf="@id/lin_vert"
+        app:layout_constraintEnd_toStartOf="@id/lin_total_count">
+
+            <TextView
+                android:id="@+id/hp1"
+                android:layout_width="@dimen/hp_width"
+                android:layout_height="@dimen/hp_height"
+                android:text="@string/hp1_text"
+                style="@style/Cell"/>
+
+            <TextView
+                android:id="@+id/hp2"
+                android:layout_width="@dimen/hp_width"
+                android:layout_height="@dimen/hp_height"
+                android:text="@string/hp2_text"
+                style="@style/Cell"/>
+
+            <TextView
+                android:id="@+id/hp3"
+                android:layout_width="@dimen/hp_width"
+                android:layout_height="@dimen/hp_height"
+                android:text="@string/hp3_text"
+                style="@style/Cell"/>
+
+            <TextView
+                android:id="@+id/hp4"
+                android:layout_width="@dimen/hp_width"
+                android:layout_height="@dimen/hp_height"
+                android:text="@string/hp4_text"
+                style="@style/Cell"/>
+
+            <TextView
+                android:id="@+id/hp5"
+                android:layout_width="@dimen/hp_width"
+                android:layout_height="@dimen/hp_height"
+                android:text="@string/hp5_text"
+                style="@style/Cell"/>
+
+            <TextView
+                android:id="@+id/hp6"
+                android:layout_width="@dimen/hp_width"
+                android:layout_height="@dimen/hp_height"
+                android:text="@string/hp6_text"
+                style="@style/Cell"/>
+
+            <TextView
+                android:id="@+id/hp7"
+                android:layout_width="@dimen/hp_width"
+                android:layout_height="@dimen/hp_height"
+                android:text="@string/hp7_text"
+                style="@style/Cell"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_total_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/lin_final_place"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/lin_total_count_margin_top"
+        app:layout_constraintStart_toEndOf="@id/lin_hor"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/count_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/count_title_height"
+            android:text="@string/count_title_text"
+            style="@style/CellsTitle"/>
+
+        <TextView
+            android:id="@+id/count0"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/count_height"
+            style="@style/CountCells"/>
+
+        <TextView
+            android:id="@+id/count1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/count_height"
+            style="@style/CountCells"/>
+
+        <TextView
+            android:id="@+id/count2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/count_height"
+            style="@style/CountCells"/>
+
+        <TextView
+            android:id="@+id/count3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/count_height"
+            style="@style/CountCells"/>
+
+        <TextView
+            android:id="@+id/count4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/count_height"
+            style="@style/CountCells"/>
+
+        <TextView
+            android:id="@+id/count5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/count_height"
+            style="@style/CountCells"/>
+
+        <TextView
+            android:id="@+id/count6"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/count_height"
+            style="@style/CountCells"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_final_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/lin_final_place_margin_top"
+        app:layout_constraintStart_toEndOf="@id/lin_total_count"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/place"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/place_height"
+            android:text="@string/place_text"
+            style="@style/CellsTitle"/>
+
+        <TextView
+            android:id="@+id/place0"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/place_height"
+            style="@style/PlaceCells"/>
+
+        <TextView
+            android:id="@+id/place1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/place_height"
+            style="@style/PlaceCells"/>
+
+        <TextView
+            android:id="@+id/place2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/place_height"
+            style="@style/PlaceCells"/>
+
+        <TextView
+            android:id="@+id/place3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/place_height"
+            style="@style/PlaceCells"/>
+
+        <TextView
+            android:id="@+id/place4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/place_height"
+            style="@style/PlaceCells"/>
+
+        <TextView
+            android:id="@+id/place5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/place_height"
+            style="@style/PlaceCells"/>
+
+        <TextView
+            android:id="@+id/place6"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/place_height"
+            style="@style/PlaceCells"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">TestingTaskTable</string>
+    <string name="error_message">Задайте баллы от 0 до 5</string>
+    <string name="clear_text">Очистить</string>
+    <string name="title1_text">Участник 1</string>
+    <string name="title2_text">Участник 2</string>
+    <string name="title3_text">Участник 3</string>
+    <string name="title4_text">Участник 4</string>
+    <string name="title5_text">Участник 5</string>
+    <string name="title6">Участник 6</string>
+    <string name="title7">Участник 7</string>
+    <string name="vp1_text">1</string>
+    <string name="vp2_text">2</string>
+    <string name="vp3_text">3</string>
+    <string name="vp4_text">4</string>
+    <string name="vp5_text">5</string>
+    <string name="vp6_text">6</string>
+    <string name="vp7_text">7</string>
+    <string name="hp1_text">1</string>
+    <string name="hp2_text">2</string>
+    <string name="hp3_text">3</string>
+    <string name="hp4_text">4</string>
+    <string name="hp5_text">5</string>
+    <string name="hp6_text">6</string>
+    <string name="hp7_text">7</string>
+    <string name="count_title_text">Сумма очков</string>
+    <string name="place_text">Место</string>
+</resources>
